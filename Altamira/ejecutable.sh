@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# 1. Activa el entorno virtual
-#. /Altamira/entorno/bin/activate
+# 1. Registra el tiempo de inicio
+start_time=$(date +%s)
 
 # 2. Actualiza pip
 python3 -m pip install --upgrade pip
@@ -33,3 +33,12 @@ for jar_file in "MML" "Productos" "Saldos"; do
         echo "El archivo ${jar_file}.csv no existe en la carpeta TEMP_DATA. No se ejecutará el archivo ${jar_file}.jar"
     fi
 done
+
+# Registra el tiempo de finalización
+end_time=$(date +%s)
+
+# Calcula la diferencia de tiempo
+elapsed_time=$((end_time - start_time))
+
+# Imprime el tiempo transcurrido
+echo "Tiempo total de ejecución: ${elapsed_time} segundos"
