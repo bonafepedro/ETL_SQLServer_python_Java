@@ -18,4 +18,4 @@ COPY Altamira /Altamira
 
 RUN cp -f java.security $JAVA_SECURITY/java.security
 # Define el comando por defecto al ejecutar el contenedor
-#CMD ["sh", "ejecutable.sh"]
+CMD ["sh", "ejecutable.sh"]
