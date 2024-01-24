@@ -7,7 +7,7 @@ El proyecto toma la carpeta DATA como imputs por lo que deben dejarse recurrente
 
 Todo el proceso corre en un ambiente de Docker, por lo que es necesario tener instalado Docker en la computadora en que se vaya a ejecutar. Puede descargarse desde el siguiente link:
 
-[https://www.docker.com/products/docker-desktop/]
+[Página Oficial Docker](https://www.docker.com/products/docker-desktop/)
 
 En computadoras Windows es solamente ejecutar el instalador, para ello es necesario tener habilitada la virtualización en BIOS. Luego es necesario abrir Docker Desktop antes de correr el container. 
 
