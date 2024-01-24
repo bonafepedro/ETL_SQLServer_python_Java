@@ -24,30 +24,25 @@ Para ejecución con ambiente windows y directamente haciendo doble click a la ap
 Estructura del proyecto:
 
 ```
-Altamira/
-│   ├── DATA/
-│       ├── ARG_UDO_restodelnombre.txt
-│       ├── MML_restodelnombre.csv
-│       └── TAR_PROD_restodelnombre.csv
-│   ├── TEMP_DATA/      #Esta capeta no existe se crea con la ejecución del programa
-│   └── AA_Envio_Lineas/
-│       ├── MML.jar
-│       ├── Productos.jar
-│       └── Saldos
-│   ├── entorno/
-│       └── carpetas del entorno virtual 
-|   ├── ETL_python.py
-|   ├── creador_metadatos.py
-|   ├── Ejecutable.ps1
-|   ├── Ejecutable.exe
-|   ├── Ejecutable.sh
-|   ├── CreadorMetadatos.ps1
-|   ├── CreadorMetadatos.exe
-|   ├── CreadorMetadatos.sh
-|   ├── requirements.txt
-|   ├── _Lineas_AA_Importacion_Definiciones.txt
+Migracion_Altamira/
+    ├── Altamira/
+|       ├── DATA/
+|           ├── ARG_UDO_restodelnombre.txt
+|           ├── MML_restodelnombre.csv
+|           └── TAR_PROD_restodelnombre.csv
+|       ├── TEMP_DATA/      #Esta capeta no existe se crea con la ejecución del programa
+|       └── AA_Envio_Lineas/
+|           ├── MML.jar
+|           ├── Productos.jar
+|           └── Saldos.jar
+|       ├── ETL_python.py
+|       ├── ejecutable.sh
+|       ├── requirements.txt
+|       ├── _Lineas_AA_Importacion_Definiciones.txt
+|       └── java.security #Configura el entorno de seguridad de Java para permitir el protocolo TSL necesario.
 |   ├── Dockerfile
-|   └── otros_archivos...
+|   ├── .gitignore
+|   └── readme.md
 
 ```
 
